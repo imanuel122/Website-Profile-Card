@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+whatsapp,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(72, 24, 242);
+}
+.container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 5px 10px 30px rgb(0, 0, 0, 0.8);
+}
+.kotak1 {
+  width: 250px;
+  height: 600px;
+  /* background-color: rgb(232, 231, 231); */
+  background-color: rgb(58, 48, 163);
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+.kotak1 .fotoprofile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.kotak1 .fotoprofile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 30px 0;
+}
+.kotak1 h1 {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.kotak1 p {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  /* color: rgb(108, 101, 101); */
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.kotak1 p span {
+  color: rgb(0, 157, 255);
+}
+.kotak1 ul {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  padding: 0px;
+}
+.kotak1 ul li {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(108, 101, 101);
+}
+.kotak1 ul li a {
+  text-decoration: none;
+  /* color: rgb(108, 101, 101); */
+  color: white;
+}
+.kotak1 ul li a:hover {
+  text-decoration: underline;
+  color: rgb(3, 146, 235);
+}
+.kotak1 .copyright p {
+  margin: 0px;
+}
+.kotak2 {
+  width: 450px;
+  height: 600px;
+  background-color: white;
+  flex-grow: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  /* background-image: linear-gradient(
+    to bottom,
+    white 80%,
+    rgb(155, 149, 149) 100%
+  ); */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(72, 24, 242) 80%,
+    rgb(155, 149, 149) 100%
+  );
+}
+.kotak2 .isi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.kotak2 .isi h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+.kotak2 .isi .kotakcontact {
+  width: 100%;
+  height: 100%;
+  /* background-color: brown; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.kotak2 .isi .kotakcontact img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.kotak2 .isi .kotakcontact .whatsapp {
+  width: 50%;
+  height: 40%;
+  /* background-color: blueviolet; */
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kotak2 .isi .kotakcontact .whatsapp img:hover {
+  width: 110px;
+  height: 110px;
+}
+.kotak2 .isi .kotakcontact .instagram {
+  width: 50%;
+  height: 40%;
+  /* background-color: rgb(27, 219, 91); */
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kotak2 .isi .kotakcontact .instagram img:hover {
+  width: 110px;
+  height: 110px;
+}
+.kotak2 .isi .kotakcontact .email {
+  width: 50%;
+  height: 50%;
+  /* background-color: rgb(63, 5, 255); */
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kotak2 .isi .kotakcontact .email img:hover {
+  width: 110px;
+  height: 110px;
+}
+.kotak2 .isi .kotakcontact .youtube {
+  width: 50%;
+  height: 50%;
+  /* background-color: rgb(135, 207, 18); */
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kotak2 .isi .kotakcontact .youtube img:hover {
+  width: 110px;
+  height: 110px;
+}
+.kotak2 .isi .kotakcontact a {
+  text-decoration: none;
+  color: black;
+}
+.kotak2 .isi .kotakcontact h2 {
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.kotak2 .isi .kotakcontact h2:hover {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.kotak2 .isi .kotakcontact p {
+  line-height: 23px;
+}
+.kotak3 {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  flex-grow: 1;
+  /* background-image: linear-gradient(
+    to bottom,
+    white 80%,
+    rgb(155, 149, 149) 100%
+  ); */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(72, 24, 242) 80%,
+    rgb(155, 149, 149) 100%
+  );
+}
+.kotak3 .background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.kotak3 img {
+  margin-left: -150px;
+  width: 800px;
+  height: 550px;
+}
